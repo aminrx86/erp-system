@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erp-system"
+version = "1.0.0"
+description = "Professional Accounting + POS + Inventory System"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{name = "ERP Development Team"}]
+license = {text = "MIT"}
+
+[tool.black]
+line-length = 100
+target-version = ["py313"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
